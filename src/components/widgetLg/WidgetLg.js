@@ -1,9 +1,84 @@
 import './widgetLg.scss';
 
 const WidgetLg = () => {
+  const Button = ({ type }) => {
+    return <button className={'widgetLgButton ' + type}>{type}</button>;
+  };
   return (
     <div className="widgetLg">
-      <h1>Large</h1>
+      <h3 className="widgetLgTitle">Latest Transactions</h3>
+      <table className="widgetLgTable">
+        <tr className="widgetLgTr">
+          <th className="widgetLgTh">Customer</th>
+          <th className="widgetLgTh">Date</th>
+          <th className="widgetLgTh">Amount</th>
+          <th className="widgetLgTh">Status</th>
+        </tr>
+
+        <tr className="widgetLgTr">
+          <td className="widgetLgUser">
+            <img
+              src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+              alt="user avatar"
+            />
+            <span className="widgetLgName">Susan Carol</span>
+          </td>
+
+          <td className="widgetLgDate">2 Jul 2020</td>
+          <td className="widgetLgAmount">399$</td>
+          <td className="widgetLgStatus">
+            <Button type="Approved" />
+          </td>
+        </tr>
+
+        <tr className="widgetLgTr">
+          <td className="widgetLgUser">
+            <img
+              src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+              alt="user avatar"
+            />
+            <span className="widgetLgName">Susan Carol</span>
+          </td>
+
+          <td className="widgetLgDate">4 Jul 2020</td>
+          <td className="widgetLgAmount">299$</td>
+          <td className="widgetLgStatus">
+            <Button type="Declined" />
+          </td>
+        </tr>
+
+        <tr className="widgetLgTr">
+          <td className="widgetLgUser">
+            <img
+              src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+              alt="user avatar"
+            />
+            <span className="widgetLgName">Susan Carol</span>
+          </td>
+
+          <td className="widgetLgDate">4 Jul 2020</td>
+          <td className="widgetLgAmount">699$</td>
+          <td className="widgetLgStatus">
+            <Button type="Approved" />
+          </td>
+        </tr>
+
+        <tr className="widgetLgTr">
+          <td className="widgetLgUser">
+            <img
+              src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+              alt="user avatar"
+            />
+            <span className="widgetLgName">Susan Carol</span>
+          </td>
+
+          <td className="widgetLgDate">5 Jul 2020</td>
+          <td className="widgetLgAmount">199$</td>
+          <td className="widgetLgStatus">
+            <Button type="Pending" />
+          </td>
+        </tr>
+      </table>
     </div>
   );
 };
