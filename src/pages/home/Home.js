@@ -7,6 +7,7 @@ const Home = () => {
     <div className="home">
       <FeaturedInfo />
       <Chart title="User Analytics" data={userData} grid dataKey="user" />
+      <div className="homeWidgets"></div>
     </div>
   );
 };
