@@ -6,6 +6,7 @@ import Home from './pages/home/Home';
 import { Switch, Route } from 'react-router-dom';
 import UserList from './pages/userList/UserList';
 import User from './pages/user/User';
+import NewUser from './pages/newUser/NewUser';
 function App() {
   return (
     <div className="app">
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" component={Home} exact />
           <Route path="/users" component={UserList} />
           <Route path="/user/:userId" component={User} />
+          <Route path="/newUser" component={NewUser} />
         </Switch>
       </div>
     </div>
