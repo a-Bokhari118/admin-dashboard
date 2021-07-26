@@ -1,1 +1,1 @@
-## Netflix clone using (MERN Stack)
+## Admin Dashboard (React)
